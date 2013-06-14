@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake'
   spec.add_dependency 'faraday', '~> 0.8'
   spec.add_dependency 'faraday_middleware', '~> 0.9'
-  spec.add_dependency 'guard'
+  spec.add_dependency 'hashie', '~> 2.0'
   spec.add_dependency 'multi_json', '~> 1.3'
   
   spec.name          = "draftin"
