@@ -1,4 +1,9 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in draftin.gemspec
+group :test do
+  gem 'guard-rspec'
+  gem 'rspec'
+end
+
+
 gemspec
