@@ -1,4 +1,7 @@
+require 'simplecov'
 require 'draftin'
+
+SimpleCov.start
 
 RSpec.configure do |config|
   config.expect_with :rspec do |c|
