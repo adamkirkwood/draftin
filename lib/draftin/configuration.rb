@@ -1,11 +1,16 @@
+require 'faraday'
+require 'draftin/version'
+
 module Draftin
   module Configuration
     VALID_OPTIONS_KEYS = [
       :email,
       :password].freeze
     
-    attr_accessor(*VALID_OPTIONS_KEYS)
+    DEFAULT_API_ENDPOINT = 'https://draftin.com/api/v1'
     
+    attr_accessor(*VALID_OPTIONS_KEYS)
+        
     def self.extended(base)
       base.reset
     end

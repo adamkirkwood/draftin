@@ -1,7 +1,3 @@
-require 'draftin/version'
-require 'faraday'
-require 'faraday_middleware'
-
 require 'draftin/configuration'
 require 'draftin/client'
 
