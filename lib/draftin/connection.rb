@@ -8,10 +8,14 @@ module Draftin
       options = options.merge(options)
       
       connection = Faraday.new(options) do |builder|
-        builder.use Faraday::Request::UrlEncoded
-        builder.use Faraday::Response::Logger
-        builder.use FaradayMiddleware::ParseJson
-        builder.use Faraday::Adapter::NetHttp
+        builder.request :url_encoded
+        
+        builder.response :json, :content_type => /\bjson$/
+        builder.response :mashify
+        builder.response :logger
+        
+        builder.adapter :net_http
+        
       end
       
       if authenticated?
