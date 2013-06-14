@@ -1,6 +1,9 @@
 require 'simplecov'
 SimpleCov.start
 
+require 'coveralls'
+Coveralls.wear!
+
 require 'draftin'
 
 RSpec.configure do |config|
