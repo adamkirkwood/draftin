@@ -1,6 +1,3 @@
-require 'rubygems'
-require 'bundler/setup'
-
 require 'draftin'
 
 RSpec.configure do |config|
