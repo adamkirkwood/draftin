@@ -16,10 +16,21 @@ module Draftin
       }
       
       response = connection(connection_options).send(method) do |request|
-        request.url(path, options)        
+        case method
+        when :get
+          request.url(formatted_path(path), options)
+        when :delete
+          puts "Unimplemented"
+        when :patch, :post, :put
+          puts "Unimplemented"
+        end
       end
       
       response
+    end
+    
+    def formatted_path(path)
+      [path, 'json'].compact.join('.')
     end
     
   end

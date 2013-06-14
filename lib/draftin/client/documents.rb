@@ -3,7 +3,11 @@ module Draftin
     module Documents
       
       def all_documents(options={})
-        get("/documents.json", options)
+        get("documents", options)
+      end
+      
+      def document(id, options={})
+        get("documents/#{id}", options)
       end
       
     end
