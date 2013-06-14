@@ -7,7 +7,8 @@ module Draftin
       :email,
       :password].freeze
     
-    DEFAULT_API_ENDPOINT = 'https://draftin.com/api/v1'
+    DEFAULT_API_VERSION   = "v1"
+    DEFAULT_API_ENDPOINT  = "https://draftin.com/api/#{DEFAULT_API_VERSION}/"
     
     attr_accessor(*VALID_OPTIONS_KEYS)
         
