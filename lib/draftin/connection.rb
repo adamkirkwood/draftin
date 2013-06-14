@@ -10,8 +10,8 @@ module Draftin
       connection = Faraday.new(options) do |builder|
         builder.request :url_encoded
         
-        builder.response :json, :content_type => /\bjson$/
         builder.response :mashify
+        builder.response :json, :content_type => /\bjson$/
         builder.response :logger
         
         builder.adapter :net_http
