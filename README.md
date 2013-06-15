@@ -8,7 +8,7 @@
 [coveralls]: https://coveralls.io/r/adamkirkwood/draftin
 [gemnasium]: https://gemnasium.com/adamkirkwood/draftin
 
-TODO: Write a gem description
+A Ruby interface for the Draftin API.
 
 ## Installation
 
