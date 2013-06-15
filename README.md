@@ -1,5 +1,13 @@
 # Draftin
 
+[![Build Status](https://travis-ci.org/adamkirkwood/draftin.png?branch=master)][travis-ci]
+[![Coverage Status](https://coveralls.io/repos/adamkirkwood/draftin/badge.png)][coveralls]
+[![Dependency Status](https://gemnasium.com/adamkirkwood/draftin.png)][gemnasium]
+
+[travis-ci]: https://travis-ci.org/adamkirkwood/draftin
+[coveralls]: https://coveralls.io/r/adamkirkwood/draftin
+[gemnasium]: https://gemnasium.com/adamkirkwood/draftin
+
 TODO: Write a gem description
 
 ## Installation
